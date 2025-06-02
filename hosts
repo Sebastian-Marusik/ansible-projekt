@@ -1,4 +1,4 @@
 [ubuntuvm]
-192.168.0.179 ansible_user=sebastian ansible_ssh_pass=devLinux ansible_pass=devLinux
+your IPv4 adress ansible_user=your_username ansible_ssh_pass=your_password ansible_pass=your_password
 
 

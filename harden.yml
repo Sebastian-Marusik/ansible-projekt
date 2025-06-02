@@ -1,12 +1,11 @@
----
+--
 - name: Twarde zabezpieczenie serwera
   hosts: ubuntuvm
   become: yes
 
   vars:
     new_user: devops
-    ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDcVyyFm23fbYCq2hIExw4XY24n6DWT76prOGwj00qVWHtusGFbFOnBhMIr8m3VA6BojPH+GNTpobBykW18v1Vg3apDFQil8FI5abXoavBDq7rHScb8t/Fv6YGcuNujDJA9Cc74I8DtcMZQWAIbY/z5HBEwd3tHO4qKgvYOVAXSZDQpi06Oqd36MBg60ZDX2KtY2ZlIRPYnuJQfRGdbTcsUmwCfRh39j+t6SeNgQL3yF7Ltgam2swLmnKiLcoczTwP9DXywv/oo0Yei8nUhTFGTc7+nwiIcIZFZZIs9yGLTf0ee2D057mOgejOlZRzvXHpxPtbNFZ1p5TNRMMn4gMYMFCi+Hc50FOPAkozewXr+gslOjiRUZxH6pkCpkFVdm+1Shu5FCe4Fi0iYqyg7ZceBEuMpjmI84cJNpcKTAL6/+XjoCEWeMZ0QBXtbKr2Wv1weng+TYF46/jh7qcK2CriPkn7ehk5rlTNS6H1wKh7XqUWq8DwFEtY6DHESZ+/y7aU= sebastian@Work-Latitude-E6510"
-
+    ssh_public_key: "your_ssh_public_key"
   tasks:
     - name: Tworzenie nowego użytkownika
       user:
