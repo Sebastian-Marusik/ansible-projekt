@@ -1,0 +1,19 @@
+---
+- name: Wstępna konfiguracja Ubuntu
+  hosts: ubuntuvm
+  become: yes
+
+  tasks:
+    - name: Aktualizacja listy pakietów i aktualizacja systemu
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Instalacja podstawowych narzędzi
+      apt:
+        name:
+          - htop
+          - curl
+          - git
+          - net-tools
+        state: present
